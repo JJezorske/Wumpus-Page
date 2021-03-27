@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Redressed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/redressed/v11/x3dickHUbrmJ7wMy9Msxe_oD.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  /*Universal styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #ffcbcb;
+    font-family: 'Open Sans';
+    font-size: 20pt;
+    color: #132743;
+}
+h2 {
+    font-size: 2rem;
+}
+
+/*Header*/
+header {
+    padding: 0 10%;
+    text-align: center;
+    background-image: url(images/wumpusFlower.jpeg);
+    background-size: cover;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+header h1 {
+    font-family: 'Redressed';
+    font-size: 4rem;
+    color: #dbe9e7;
+    background-color: rgba(0, 0, 0, 0);
+}
+nav {
+    display: inline-flex;
+    margin: 1rem;
+    width: 70%;
+    min-width: 450px;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0);
+    flex-shrink: 2;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #407088;
+    border: 2px solid #132743;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Banner and main content*/
+article {
+    margin: 50px;
+    text-align: center;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.content p {
+    width: 50%;
+    min-width: 450px;
+    margin: 1rem;
+}
+.content img {
+    width: 299px;
+    height: 299px;
+    opacity: 0.8;
+    border: 2px solid #132743;
+    border-radius: 10px;
+    flex-shrink: 2;
+}
+.gallery {
+    display: inline-flex;
+    height: 299px;
+    width: 70%;
+    margin: 50px auto;
+    flex-shrink: 2;
+}
+
+/*About me*/
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.about .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 2;
+    margin: 50px;
+}
+.about .content img {
+    width: 800px;
+    height: 598px;
+    margin: 0 auto;
+    flex-basis: auto;
+    flex-shrink: 2;
+}
+.about .content p {
+    margin: 20px auto;
+    min-width: 450px;
+}
+
+/*footer*/
+footer p {
+    font-size: medium;
+    margin: 1rem;
+}
+
+@media only screen and (min-width: 1110px) {
+    article .article .content img {
+        display: hidden;
+    }
+}
